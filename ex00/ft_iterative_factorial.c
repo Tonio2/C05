@@ -5,16 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: alabalet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/15 11:29:01 by alabalet          #+#    #+#             */
-/*   Updated: 2020/10/15 11:36:32 by alabalet         ###   ########.fr       */
+/*   Created: 2020/10/15 11:42:42 by alabalet          #+#    #+#             */
+/*   Updated: 2020/10/15 11:47:59 by alabalet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_iterative_factorial(int nb)
+int	ft_iterative_factorial(int nb)
 {
+	int result;
+
+	result = 1;
 	if (nb < 0 || nb > 15)
 		return (0);
-	if (nb == 0)
-		return (1);
-	return (nb * ft_iterative_factorial(nb - 1));
+	while (nb != 0)
+	{
+		result *= nb;
+		nb--;
+	}
+	return (result);
 }

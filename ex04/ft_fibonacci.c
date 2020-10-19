@@ -6,11 +6,11 @@
 /*   By: alabalet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/15 12:22:27 by alabalet          #+#    #+#             */
-/*   Updated: 2020/10/15 12:26:28 by alabalet         ###   ########.fr       */
+/*   Updated: 2020/10/19 13:56:59 by alabalet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_fibonacci(int index)
+int	ft_fibonacci(int index)
 {
 	if (index < 0)
 		return (-1);
@@ -18,5 +18,5 @@ int ft_fibonacci(int index)
 		return (0);
 	if (index == 1)
 		return (1);
-	return (ft_fibonacci(index - 1) + ft_fibonacci(index -2));
+	return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
 }
